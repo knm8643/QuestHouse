@@ -1,4 +1,3 @@
-package Q_001_hello.chung;
 import java.util.Scanner;
 
 // --- 백준 제출시

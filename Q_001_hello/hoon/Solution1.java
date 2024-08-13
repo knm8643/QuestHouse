@@ -1,5 +1,3 @@
-package quest;
-
 import java.util.Scanner;
 
 /**
