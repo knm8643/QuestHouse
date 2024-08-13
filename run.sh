@@ -1,11 +1,14 @@
 #!/bin/bash
 
+# 스크립트 실행시 몇번 Quest인지 입력받음
+read -p "몇번 Quest를 실행할거야? ex) Q_001 : " BASE_DIR
+
 # Q001_solution
 CASE1_SOLUTION=$(echo -e "2360\n3776\n1416\n181720")
 
 # chung
-CLASS_DIR="Q_001_hello/chung"
-JAVA_FILE="Q_001_hello/chung/Solution1.java"
+CLASS_DIR="$BASE_DIR/chung"
+JAVA_FILE="$BASE_DIR/chung/Solution1.java"
 
 # 클래스 파일의 이름을 추출합니다 (파일명에서 .java 확장자 제거)
 CLASS_NAME=$(basename "$JAVA_FILE" .java)
